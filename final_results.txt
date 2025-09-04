@@ -1,0 +1,36 @@
+Aggregated permutation importances saved to 'feature_importance.csv'
+
+All features by aggregated permutation importance:
+                   feature  importance_mean  importance_std  n_evaluations
+                heart_rate         0.004865        0.005929             20
+               systolic_bp         0.002981        0.009653             20
+                       age         0.002630        0.007724             20
+                   glucose         0.001693        0.007372             20
+               cholesterol         0.001631        0.011343             20
+  alcohol_consumption_High         0.001329        0.001933             20
+               medications         0.001294        0.002759             20
+   alcohol_consumption_nan         0.001259        0.002177             20
+           blood_group_AB-         0.001157        0.001227             20
+                   insulin         0.001103        0.006477             20
+            blood_group_O-         0.001096        0.002047             20
+   alcohol_consumption_Low         0.000392        0.002608             20
+           blood_group_AB+         0.000386        0.002753             20
+                 allergies         0.000370        0.002657             20
+        exercise_level_Low         0.000245        0.001826             20
+            blood_group_B+         0.000081        0.001757             20
+            blood_group_B-         0.000070        0.002095             20
+            blood_group_A+        -0.000123        0.002327             20
+            blood_group_A-        -0.000229        0.002258             20
+     exercise_level_Medium        -0.000296        0.002077             20
+alcohol_consumption_Medium        -0.000314        0.002089             20
+              diastolic_bp        -0.000391        0.008618             20
+       exercise_level_High        -0.000405        0.001549             20
+   family_history_diabetes        -0.000549        0.001366             20
+            blood_group_O+        -0.000668        0.001660             20
+           first_pregnancy        -0.000838        0.001262             20
+                    smoker        -0.001356        0.002616             20
+               pregnancies        -0.002105        0.004463             20
+                       bmi        -0.002802        0.008007             20
+--------------------------------------------------
+
+Final hold-out ROC-AUC on test: 0.5128

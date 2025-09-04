@@ -1,0 +1,105 @@
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+Index: 8000 entries, Patient_1 to Patient_8000
+Data columns (total 18 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   age                      8000 non-null   int64  
+ 1   blood_group              8000 non-null   object 
+ 2   glucose                  8000 non-null   float64
+ 3   insulin                  8000 non-null   float64
+ 4   bmi                      8000 non-null   float64
+ 5   cholesterol              8000 non-null   float64
+ 6   systolic_bp              8000 non-null   int64  
+ 7   diastolic_bp             8000 non-null   int64  
+ 8   heart_rate               8000 non-null   int64  
+ 9   pregnancies              8000 non-null   int64  
+ 10  first_pregnancy          8000 non-null   int64  
+ 11  earlier_birth            8000 non-null   int64  
+ 12  smoker                   8000 non-null   int64  
+ 13  alcohol_consumption      5979 non-null   object 
+ 14  exercise_level           8000 non-null   object 
+ 15  family_history_diabetes  8000 non-null   int64  
+ 16  allergies                8000 non-null   int64  
+ 17  medications              8000 non-null   int64  
+dtypes: float64(4), int64(11), object(3)
+memory usage: 1.2+ MB
+
+
+Statistical Summary:
+               age      glucose      insulin          bmi  cholesterol  systolic_bp  diastolic_bp   heart_rate  pregnancies  first_pregnancy  earlier_birth       smoker  family_history_diabetes    allergies  medications
+count  8000.000000  8000.000000  8000.000000  8000.000000  8000.000000  8000.000000   8000.000000  8000.000000  8000.000000      8000.000000    8000.000000  8000.000000              8000.000000  8000.000000  8000.000000
+mean     30.448625   125.162800    13.566062    27.427487   199.704875   134.599625     89.929375    85.025375     4.964625         0.046125       0.503500     0.498375                 0.492000     0.499875     0.496125
+std       6.063061    31.742384     6.635097     7.266131    46.085754    26.205365     17.656723    20.360514     3.167077         0.209769       0.500019     0.500029                 0.499967     0.500031     0.500016
+min      18.000000    70.000000     2.000000    15.000000   120.000000    90.000000     60.000000    50.000000     0.000000         0.000000       0.000000     0.000000                 0.000000     0.000000     0.000000
+25%      26.000000    98.000000     7.900000    21.200000   160.500000   112.000000     75.000000    67.000000     2.000000         0.000000       0.000000     0.000000                 0.000000     0.000000     0.000000
+50%      30.000000   124.900000    13.600000    27.400000   198.550000   135.000000     90.000000    85.000000     5.000000         0.000000       1.000000     0.000000                 0.000000     0.000000     0.000000
+75%      35.000000   152.500000    19.300000    33.700000   240.200000   157.000000    105.000000   103.000000     8.000000         0.000000       1.000000     1.000000                 1.000000     1.000000     1.000000
+max      45.000000   180.000000    25.000000    40.000000   280.000000   180.000000    120.000000   120.000000    10.000000         1.000000       1.000000     1.000000                 1.000000     1.000000     1.000000
+
+Number of Patients by Age:
+age
+18     57
+19    151
+20    164
+21    222
+22    251
+23    291
+24    318
+25    388
+26    406
+27    411
+28    461
+29    502
+30    477
+31    473
+32    436
+33    469
+34    415
+35    355
+36    370
+37    286
+38    244
+39    216
+40    193
+41    136
+42    113
+43     99
+44     68
+45     28
+
+Number of Patients by Blood Group:
+blood_group
+AB+    1030
+B-     1021
+A-     1017
+O+     1014
+O-      986
+B+      982
+A+      980
+AB-     970
+
+First Rows of the Dataset:
+            age blood_group  glucose  insulin   bmi  cholesterol  systolic_bp  diastolic_bp  heart_rate  pregnancies  first_pregnancy  earlier_birth  smoker alcohol_consumption exercise_level  family_history_diabetes  allergies  medications
+patient                                                                                                                                                                                                                                         
+Patient_1    40         AB+     92.0     12.1  18.7        243.4          166           107         106            1                0              0       0                High         Medium                        0          1            0
+Patient_2    30          B+    125.5      5.6  18.8        222.9          112            72          91            9                0              0       0                 Low         Medium                        1          1            1
+Patient_3    41          O-     94.1     14.9  16.0        143.7          107            83          87            9                0              1       1                 NaN         Medium                        1          0            0
+Patient_4    24          A+     79.1      6.3  20.5        173.1          167           106         120            7                0              1       1              Medium            Low                        1          0            1
+Patient_5    33          B+    132.7     16.2  35.5        215.6          117            85         111            1                0              1       0                High         Medium                        0          0            1
+Patient_6    28          A-    165.5     15.5  25.8        125.1          111            75         118            5                0              1       1                 Low         Medium                        1          1            1
+Patient_7    27          A+     95.4     14.6  38.1        162.5          178            98          76            4                0              0       0                High         Medium                        1          0            0
+Patient_8    30          B-     91.8     14.6  35.2        271.9          106            96          60            1                0              0       1                 NaN           High                        1          0            0
+Patient_9    27          O-    156.1     25.0  37.6        248.5          180            90          90            7                0              0       0                 Low         Medium                        1          1            0
+Patient_10   33          A+     82.0     21.7  38.3        142.9          107            88          67            9                0              0       1                High           High                        0          0            1
+Patient_11   25          O-    154.2      6.9  23.1        240.5          170            99          54            0                0              1       1                 Low         Medium                        1          0            0
+Patient_12   34          O-    112.5     15.0  23.4        270.6          119            78         119            0                1              0       0              Medium            Low                        0          0            1
+Patient_13   28          A-     97.9     23.8  38.7        240.3          158           109          66            7                0              0       1                 Low           High                        0          1            1
+Patient_14   25          O-    154.4      4.7  27.7        137.3          176           107          79            6                0              1       0              Medium            Low                        1          0            0
+Patient_15   22          O-     93.2     19.8  16.5        216.8          114            61          67            2                0              0       0                 NaN         Medium                        0          1            0
+Patient_16   32          B+    137.7     15.1  27.1        151.7          159            78          96            6                0              1       0                 Low         Medium                        0          1            0
+Patient_17   28         AB+     88.9     14.4  28.2        160.5          176           119         112            6                0              0       1                 NaN         Medium                        1          0            1
+Patient_18   26          A-    129.9     13.0  32.3        220.3          134           117          92            9                0              0       0                 Low            Low                        0          0            1
+Patient_19   21          A-    151.2      2.4  37.3        233.7          125            65          79            8                0              0       1                High            Low                        0          0            0
+Patient_20   43         AB+    175.3      6.7  25.2        249.1          131           114         115            8                0              0       0                High           High                        0          1            1

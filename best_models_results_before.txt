@@ -1,0 +1,24 @@
+Model: LogReg
+Best Params: {'model__C': 0.01, 'model__solver': 'saga'}
+Best ROC-AUC: 0.487
+--------------------------------------------------
+Model: RandomForest
+Best Params: {'model__max_depth': 20, 'model__min_samples_split': 10, 'model__n_estimators': 50}
+Best ROC-AUC: 0.500
+--------------------------------------------------
+Model: GradientBoosting
+Best Params: {'model__learning_rate': 0.2, 'model__max_depth': 3, 'model__n_estimators': 100}
+Best ROC-AUC: 0.497
+--------------------------------------------------
+Model: SVM
+Best Params: {'model__C': 10, 'model__kernel': 'linear'}
+Best ROC-AUC: 0.494
+--------------------------------------------------
+Model: KNN
+Best Params: {'model__n_neighbors': 3, 'model__weights': 'distance'}
+Best ROC-AUC: 0.492
+--------------------------------------------------
+Model: MLP
+Best Params: {'model__activation': 'tanh', 'model__alpha': 0.0001, 'model__hidden_layer_sizes': (50, 50)}
+Best ROC-AUC: 0.468
+--------------------------------------------------
