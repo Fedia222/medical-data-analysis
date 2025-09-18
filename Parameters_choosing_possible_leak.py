@@ -19,10 +19,10 @@ RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
 
 # data upload
-df = pd.read_csv("patient_data_two_cc.csv", index_col="patient")
+df = pd.read_csv("patient_data_121.csv", index_col="patient")
 
 y = df["earlier_birth"]
-X = df.drop(columns=["earlier_birth"])
+X = df.drop(columns=["earlier_birth", 'control_parameter1'])
 
 categorical_vars = list(df.select_dtypes(include=["object"]).columns)
 numerical_vars = list(X.select_dtypes(include=["int64", "float64"]).columns)

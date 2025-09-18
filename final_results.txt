@@ -2,37 +2,36 @@ Aggregated permutation importances saved to 'feature_importance_two_params.csv'
 
 All features by aggregated permutation importance:
                    feature  importance_mean  importance_std  n_evaluations
-        control_parameter1           0.4798        0.013431             20
-                   glucose           0.0000        0.000000             20
-                       age           0.0000        0.000000             20
-                       bmi           0.0000        0.000000             20
-               cholesterol           0.0000        0.000000             20
-               systolic_bp           0.0000        0.000000             20
-                   insulin           0.0000        0.000000             20
-              diastolic_bp           0.0000        0.000000             20
-                heart_rate           0.0000        0.000000             20
-           first_pregnancy           0.0000        0.000000             20
-               pregnancies           0.0000        0.000000             20
-                    smoker           0.0000        0.000000             20
-   family_history_diabetes           0.0000        0.000000             20
-                 allergies           0.0000        0.000000             20
-               medications           0.0000        0.000000             20
-        control_parameter2           0.0000        0.000000             20
-            blood_group_A+           0.0000        0.000000             20
-            blood_group_A-           0.0000        0.000000             20
-           blood_group_AB+           0.0000        0.000000             20
-           blood_group_AB-           0.0000        0.000000             20
-            blood_group_B+           0.0000        0.000000             20
-            blood_group_B-           0.0000        0.000000             20
-            blood_group_O+           0.0000        0.000000             20
-            blood_group_O-           0.0000        0.000000             20
-  alcohol_consumption_High           0.0000        0.000000             20
-   alcohol_consumption_Low           0.0000        0.000000             20
-alcohol_consumption_Medium           0.0000        0.000000             20
-   alcohol_consumption_nan           0.0000        0.000000             20
-       exercise_level_High           0.0000        0.000000             20
-        exercise_level_Low           0.0000        0.000000             20
-     exercise_level_Medium           0.0000        0.000000             20
+        control_parameter1         0.500207        0.002404             20
+                       age         0.000000        0.000000             20
+                   insulin         0.000000        0.000000             20
+                       bmi         0.000000        0.000000             20
+               cholesterol         0.000000        0.000000             20
+                   glucose         0.000000        0.000000             20
+              diastolic_bp         0.000000        0.000000             20
+                heart_rate         0.000000        0.000000             20
+               pregnancies         0.000000        0.000000             20
+           first_pregnancy         0.000000        0.000000             20
+                    smoker         0.000000        0.000000             20
+   family_history_diabetes         0.000000        0.000000             20
+                 allergies         0.000000        0.000000             20
+               systolic_bp         0.000000        0.000000             20
+               medications         0.000000        0.000000             20
+            blood_group_A+         0.000000        0.000000             20
+            blood_group_A-         0.000000        0.000000             20
+           blood_group_AB+         0.000000        0.000000             20
+           blood_group_AB-         0.000000        0.000000             20
+            blood_group_B+         0.000000        0.000000             20
+            blood_group_B-         0.000000        0.000000             20
+            blood_group_O+         0.000000        0.000000             20
+            blood_group_O-         0.000000        0.000000             20
+  alcohol_consumption_High         0.000000        0.000000             20
+   alcohol_consumption_Low         0.000000        0.000000             20
+alcohol_consumption_Medium         0.000000        0.000000             20
+   alcohol_consumption_nan         0.000000        0.000000             20
+       exercise_level_High         0.000000        0.000000             20
+        exercise_level_Low         0.000000        0.000000             20
+     exercise_level_Medium         0.000000        0.000000             20
 --------------------------------------------------
 
 Final hold-out ROC-AUC (macro, ovr) on test: 1.0000

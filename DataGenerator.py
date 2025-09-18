@@ -45,20 +45,25 @@ df["first_pregnancy"] = [0 if preg != 0 else random.choice([0, 1]) for preg in d
 
 # сopy
 df["control_parameter1"] = df["earlier_birth"].copy()
-df["control_parameter2"] = df["earlier_birth"].copy()
+#df["control_parameter2"] = df["earlier_birth"].copy()
 
 # to change to tst
-to_invert1 = 3000
+to_invert1 = 4500
 to_invert2 = 2500
 
 # инверсия для control_parameter1
-flip_idx1 = np.random.choice(df.index, size=min(to_invert1, len(df)), replace=False)
-df.loc[flip_idx1, "control_parameter1"] = -1 * df.loc[flip_idx1, "control_parameter1"]
+alpha = random.choice([-2,-1, 0, 1, 0.5, 0.1, -0.25, -0.65, -41, 2.255, 1422.2])
 
+flip_idx1 = np.random.choice(df.index, size=min(to_invert1, len(df)), replace=False)
+df.loc[flip_idx1, "control_parameter1"] = alpha * df.loc[flip_idx1, "control_parameter1"]
+
+'''
 # инверсия для control_parameter2 (другой набор строк)
 remaining_idx = list(set(df.index))
 flip_idx2 = np.random.choice(remaining_idx, size=min(to_invert2, len(remaining_idx)), replace=False)
 df.loc[flip_idx2, "control_parameter2"] = -1 * df.loc[flip_idx2, "control_parameter2"]
+
+'''
 
 # Set patient as index
 df.set_index("patient", inplace=True)
@@ -66,7 +71,7 @@ df.to_csv("patient_data.csv")
 
 
 print(f"Инверсий в control_parameter1: {(df['control_parameter1'] != df['earlier_birth']).sum()}")
-print(f"Инверсий в control_parameter2: {(df['control_parameter2'] != df['earlier_birth']).sum()}")
+#print(f"Инверсий в control_parameter2: {(df['control_parameter2'] != df['earlier_birth']).sum()}")
 
 # normal distrib for age
 df_up = df.copy()
@@ -78,4 +83,4 @@ def truncated_normal(size, mean=30, sd=7, low=18, high=45):
 ages = truncated_normal(len(df_up), mean=30, sd=7, low=18, high=45)
 df_up["age"] = np.rint(ages).astype(int)
 
-df_up.to_csv("patient_data_two_cc.csv")
+df_up.to_csv("patient_data_121.csv")
