@@ -18,6 +18,11 @@ import matplotlib.pyplot as plt
 RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
 
+
+
+# still get auc ro of 1 problem
+
+
 # data upload
 df = pd.read_csv("patient_data_121.csv", index_col="patient")
 
@@ -175,6 +180,8 @@ plot_path = "feature_importance_top20_two_params.png"  # CHANGED: согласо
 plt.savefig(plot_path, dpi=300)
 plt.show()
 print(f"Chart saved to '{plot_path}'")
+
+
 
 # Save full text report
 with open("final_results.txt", "w") as f:
